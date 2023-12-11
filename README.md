@@ -1,10 +1,10 @@
 # Post Streak Plugin for WordPress
 
-*Plugin Name: Post Streak Tracker
+- Plugin Name: Post Streak Tracker
 
-*Description: Keep track of the author's posting streak and display a message in the dashboard.
+- Description: Keep track of the author's posting streak and display a message in the dashboard.
 
-*Version: 1.2
+- Version: 1.2
 
-*Author: Tsquare07
+- Author: Tsquare07
 
