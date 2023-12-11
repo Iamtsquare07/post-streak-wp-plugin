@@ -11,13 +11,11 @@ add_action('publish_post', 'update_post_streak');
 // Hook into the post update process
 add_action('save_post', 'update_post_streak');
 
-// Add a dashboard widget
 add_action('wp_dashboard_setup', 'post_streak_dashboard_widget');
 
-// Function to update the posting streak
 function update_post_streak($post_id) {
     if (wp_is_post_revision($post_id)) {
-        return; // Don't count revisions
+        return;
     }
 
     $author_id = get_post_field('post_author', $post_id);
@@ -33,7 +31,6 @@ function update_post_streak($post_id) {
         $current_streak = 0;
     }
 
-    // Update the streak
     $current_streak++;
     update_user_meta($author_id, $streak_key, $current_streak);
 
