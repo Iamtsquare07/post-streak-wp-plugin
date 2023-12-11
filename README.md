@@ -1,1 +1,1 @@
-# post-streak-wp-plugin
+# Post Streak Plugin for WordPress
